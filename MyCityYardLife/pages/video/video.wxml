@@ -1,0 +1,24 @@
+<view class="index">
+  <text class="iconfont icon-logo"></text>
+  <text>我收藏喜欢的音乐MV,你们喜欢的话点个赞吧</text>
+</view>
+
+<view class="Contain">
+  <scroll-view scroll-y class="videoScroll">
+    <view class="videoItem" wx:for="{{videoListData}}" wx:key="index">
+      <video src="{{item.url}}" poster="{{item.cover}}" object-fit="fill"></video>
+
+      <view class="content">{{item.briefDesc}}</view>
+      <view class="footer" bindtap="praised" id="{{item.id}}">
+        <image class="avatar" src="{{item.cover}}"></image>
+        <text class="nickName">{{item.artistName}}</text>
+        <view class="comments_praised">
+          <text class=" item">
+            <text class="iconfont icon-hanhan-01-01 {{item.dianzan ? 'selectcolor' :'color'}}"></text>
+            <text class="count">{{item.count}}</text>
+          </text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

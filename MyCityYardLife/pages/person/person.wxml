@@ -1,0 +1,32 @@
+<view class="user-info-box" bindtap="toLogin">
+  <image class="background" src="{{changImage.tempFilePaths[0] ? changImage.tempFilePaths[0] : '/static/xingkong.png'}}"
+    bindtap="changCover"></image>
+  <view class="portrait-box">
+    <image bindtap="getUserProfile" class="portrait"
+      src="{{UserInfo.avatarUrl ? UserInfo.avatarUrl : unUserInfo.avatarUrl}}">
+    </image>
+    <text class="username">{{UserInfo.nickName ? UserInfo.nickName : unUserInfo.nickName}}</text>
+    <view class="signature">{{UserInfo.signature?UserInfo.signature:'个人签名'}}</view>
+  </view>
+  <text class="iconfont icon-tuichu" bindtap="exitEvent"></text>
+</view>
+<view class="information">
+  <view class="message1">
+    <text class="info"><text class="iconfont icon-xingming"></text> {{personlist.name}}</text>
+    <text class="info"><text class="iconfont icon-nianling"> </text> {{personlist.age}}岁</text>
+  </view>
+  <view class="message2">
+    <text class="info"><text class="iconfont icon-daohangdizhi"></text> {{personlist.address}}</text>
+    <text class="info"><text class="iconfont icon-dianhua"></text> {{personlist.phone}}</text>
+  </view>
+</view>
+<view class="welcome">
+  <text class="iconfont icon-huanying"></text>
+  <text> 欢迎来访! {{loginList.name}}</text>
+</view>
+<view class="educate">
+  <text class="iconfont icon-jiaoyubeijing"></text>
+  <text> 自我介绍</text>
+</view>
+
+<view class="educate-text">{{personlist.introduce}}</view>

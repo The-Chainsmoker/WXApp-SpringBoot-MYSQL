@@ -1,0 +1,12 @@
+<view class="title">口号:{{personlist.slogan}}</view>
+
+<swiper class="banners" indicator-dots indicator-color='ivory' indicator-active-color='#91cdf6' autoplay="true">
+  <swiper-item wx:for="{{bannerList}}" wx:key="index">
+    <image src="{{item.img}}"></image>
+  </swiper-item>
+</swiper>
+
+<scroll-view class="article" scroll-y>
+  <text>{{personlist.title}}</text>
+  <view>{{personlist.experience}}</view>
+</scroll-view>

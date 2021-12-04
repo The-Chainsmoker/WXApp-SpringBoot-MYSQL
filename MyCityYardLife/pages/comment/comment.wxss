@@ -1,0 +1,212 @@
+.index {
+  background-color: #91cdf6;
+  padding-top: 5rpx;
+  padding-bottom: 20rpx;
+}
+
+.index text:nth-child(1) {
+  text-align: center;
+  display: block;
+  padding: 10rpx auto;
+  color: #fff;
+}
+
+.messageScroll {
+  height: calc(100vh - 170rpx);
+}
+
+.messageScroll .item {
+  position: relative;
+  margin: 0 30rpx;
+  margin-top: 30rpx;
+  padding-bottom: 25rpx;
+  border-bottom: 1rpx solid #e0e0e0;
+}
+
+.messageScroll .item .headImage {
+  position: absolute;
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  top: 4rpx;
+  left: 0;
+}
+
+.messageScroll .item .rightText {
+  margin-left: 120rpx;
+}
+
+.item .name {
+  font-size: 30rpx;
+}
+
+.item .name text:nth-child(1) {
+  color: #1296db;
+}
+
+
+.item .name .icon-hanhan-01-01 {
+  margin-top: 6rpx;
+  float: right;
+  color: #909399;
+}
+
+.item .name .likeChance .color {
+  color: #909399;
+}
+
+.item .name .likeChance .selectcolor {
+  color: #1296db;
+}
+
+
+.item .name .dianzhan {
+  float: right;
+  margin-right: 10rpx;
+}
+
+.rightText .content {
+  margin-top: 10rpx;
+  font-size: 35rpx;
+  width: 560rpx;
+}
+
+.allImage {
+  width: 582rpx;
+  margin-top: 10rpx;
+}
+
+.allImage .level {
+  width: 180rpx;
+  height: 180rpx;
+  margin-right: 10rpx;
+  margin-bottom: -2rpx;
+  display: inline-block;
+}
+
+.allImage .showImage {
+  width: 100%;
+  height: 100%;
+}
+
+.item .showVideo {
+  margin-top: 10rpx;
+  width: 582rpx;
+  height: 328rpx;
+}
+
+.item .address {
+  font-size: 23rpx;
+  color: #616e98;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.comment .icon-tianjiatupian {
+  float: left;
+  font-size: 65rpx;
+  color: #909399;
+  margin: 11rpx 0 10rpx 40rpx;
+  color: #c4c4c4;
+}
+
+.comment .icon-daohangdizhi {
+  float: right;
+  color: #909399;
+  font-size: 65rpx;
+  margin: 9rpx 34rpx 10rpx 0rpx;
+  color: #c4c4c4;
+}
+
+/* 评论区域 */
+
+.comment {
+  position: relative;
+  border-top: .5rpx solid #ccc;
+  height: 98rpx;
+}
+
+.comment .click {
+  position: absolute;
+  width: 670rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  padding-left: 30rpx;
+  background-color: #f2f2f2;
+  border-radius: 40rpx;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #a5a5a5;
+}
+
+.comment .click:first-of-type {
+  font-size: 30rpx;
+}
+
+.comment .click:first-of-type::before {
+  content: "\e63f";
+  font-family: 'iconfont';
+  margin-right: 10rpx;
+}
+
+.comment .comment_text {
+  border-top: 1px solid #d8d8d8;
+  position: absolute;
+  width: 100%;
+  height: 500rpx;
+  background-color: #fdfdfd;
+  top: -260rpx;
+}
+
+.comment .display {
+  display: block;
+}
+
+.comment .hidden {
+  display: none;
+}
+
+
+.comment_text .write {
+  padding: 20rpx;
+  width: 655rpx;
+  height: 146rpx;
+  background-color: #eeeeee;
+  border-radius: 20rpx;
+  margin: 0 auto;
+  margin-top: 15rpx;
+  font-size: 30rpx;
+}
+
+.comment .submit {
+  padding: 0;
+  margin: 0;
+  font-size: 30rpx;
+  width: 135rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 30rpx;
+  background-color: #1296db;
+  color: #fff;
+  float: right;
+  margin: 15rpx 38rpx 0 0;
+  font-weight: normal;
+}
+
+.comment .submit:active {
+  background-color: #0d608d;
+}
+
+.comment_text .icon-xiaolian {
+  font-size: 60rpx;
+  position: relative;
+  left: 40rpx;
+  top: 14rpx;
+}
+
+.messageScroll .time {
+  font-size: 30rpx;
+
+}

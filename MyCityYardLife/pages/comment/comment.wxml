@@ -1,0 +1,52 @@
+<view bindtap="cancleEvent">
+  <view class="index">
+    <text>留下你的精彩评论吧！</text>
+  </view>
+
+  <scroll-view scroll-y class="messageScroll">
+    <view class="item" wx:for="{{userlist}}" wx:key="index">
+      <image class="headImage" src="{{item.headImage}}" alt=""></image>
+      <view class="rightText">
+
+        <view class="name">
+          <text>{{item.sign}}</text>
+          <text class="likeChance" bindtap="praised" id="{{item.id}}" wx:key="index">
+            <text class="iconfont icon-hanhan-01-01 {{item.power ? 'selectcolor' :'color'}}"></text>
+            <text class="dianzhan">{{item.dianzan}}</text>
+          </text>
+        </view>
+        <view class="content">{{item.content}}</view>
+
+        <view class="allImage">
+          <view class="level" wx:for="{{item.image}}" wx:key="index">
+            <image class="showImage" src="{{item.tempFilePath}}"></image>
+          </view>
+        </view>
+
+        <!-- <image class="showImage" src="{{item.tempFilePath}}"></image> -->
+
+        <video wx:if="{{item.video!='false'}}" class="showVideo" src="{{item.video}}"></video>
+        <view class="address">{{item.address}}</view>
+        <text class="time">{{item.gmtCreate}}</text>
+      </view>
+      
+    </view>
+
+  </scroll-view>
+</view>
+
+<view class="comment">
+  <view class=click" bindtap="clickEvent">
+    <text class="">友善发言,温暖评论区</text>
+  </view>
+  <view class="comment_text {{show ? 'display' : 'hidden'}}">
+    <view>
+      <text class="iconfont icon-tianjiatupian" bindtap="getMedia"></text>
+      <text class="iconfont icon-daohangdizhi" bindtap="getPosition"></text>
+    </view>
+    <textarea class="write" value="{{content}}" placeholder="友善发言,温暖评论区" bindinput="inputEvent">
+    </textarea>
+    <text class=".iconfont icon-xiaolian"></text>
+    <button class="submit" bindtap="submitEvent">发表</button>
+  </view>
+</view>

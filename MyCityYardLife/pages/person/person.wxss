@@ -1,0 +1,117 @@
+.user-info-box {
+  position: relative;
+  height: 300rpx;
+  width: 100%;
+}
+
+.background {
+  height: 300rpx;
+  width: 100%;
+}
+
+.portrait-box {
+  position: absolute;
+  left: -5rpx;
+  bottom: -103rpx;
+}
+
+/* .user-info-box .portrait-box {} */
+
+.user-info-box .username {
+  color: #fff;
+  display: inline-block;
+  padding-top: 65rpx;
+}
+
+
+.user-info-box .portrait {
+  margin: 40rpx 30rpx 15rpx 40rpx;
+  vertical-align: top;
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+}
+
+.portrait-box .signature {
+  margin-left: 45rpx;
+  font-size: 30rpx;
+}
+
+.user-info-box .icon-tuichu {
+  position: absolute;
+  font-size: 60rpx;
+  right: 7px;
+  top: 20rpx;
+  color: #fff;
+}
+
+
+/* 信息部分 */
+
+.information {
+  margin: 0 50rpx;
+  margin-top: 135rpx;
+  display: flex;
+}
+
+.information .message1,
+.message2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.information .iconfont {
+  color: #1296db;
+}
+
+.information .message1 {
+  margin-right: 160rpx;
+}
+
+.information .info {
+  margin-bottom: 15rpx;
+}
+
+.iconfont {
+  font-size: 40rpx;
+}
+
+.welcome {
+  margin: 0 50rpx;
+  margin-top: 60rpx;
+  color: #91cdf6;
+  border-bottom: 1px solid #91cdf6;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.welcome .icon-huanying {
+  color: #1296db;
+}
+
+.welcome :last-of-type {
+
+  font-weight: bold;
+  font-size: 43rpx;
+  color: #1296db
+}
+
+.educate {
+  margin: 0 50rpx;
+  margin-top: 90rpx;
+  color: #1296db;
+  font-weight: bold;
+  border-bottom: 1px solid #91cdf6;
+}
+
+.educate text:nth-child(2) {
+  font-weight: bold;
+  font-size: 43rpx;
+}
+
+.educate-text {
+  display: inline-block;
+  margin: 20rpx 40rpx;
+  text-indent: 67rpx;
+}
