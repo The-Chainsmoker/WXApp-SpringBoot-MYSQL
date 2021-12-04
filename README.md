@@ -1,5 +1,3 @@
-# 仿我的朋友圈
-## WXApp-SpringBoot-MYSQL 
-## WangYiYunAPI
+## 视频功能API
 ### npm install/cnpm install
 ### node app.js
